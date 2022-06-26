@@ -1,4 +1,5 @@
 import menuItem from "./menuItem"
+import review from "./review"
 
 export default {
     name : 'restaurant',
@@ -46,6 +47,12 @@ export default {
             title : 'Menu',
             type : 'array',
             of : [{type : 'menuItem'}]
+        },
+        {
+            name : 'reviews',
+            title : 'Reviews',
+            type : 'array',
+            of : [{type : 'review'}]
         }
     ]
 }
